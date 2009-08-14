@@ -46,7 +46,7 @@ textarea { border: 1px solid #224; font-size: 12px; font-family:'Lucida Sans Uni
 
 /* discussions */
 
-.user_name { float:left; display:inline; vertical-align:bottom; margin:0 0 0 -110px; text-align:right; width:100; }
+.user_name { float:left; display:inline; vertical-align:bottom; margin:1 0 0 -110px; text-align:right; width:100; font-size:11px; }
 .post_body { display:inline;  }
 
-.invite_talk { color:white; background-color: #557; padding:10px; font-size:12px; }
+.invite_talk { color:#224; background-color: #fff; padding:5px 0 5px 0; border-top:1px #224 solid; border-bottom:1px #224 solid; font-size:12px; }

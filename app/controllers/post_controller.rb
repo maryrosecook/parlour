@@ -24,6 +24,7 @@ class PostController < ApplicationController
           page.insert_html :bottom, 'posts', :partial => 'show', :locals => { :post => post }
           page.visual_effect :highlight, "post#{post.id}", :duration => 4
           page.replace_html 'nothing_said', "" if post.discussion.posts.length == 1
+          page['post_body'].clear
         end
       end
     else
