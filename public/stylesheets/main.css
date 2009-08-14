@@ -1,0 +1,52 @@
+/* generic */
+
+div,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,table{ margin:0; padding:0; }
+input,form,h2 { display:inline; }
+body { font-family:'Lucida Sans Unicode', 'Lucida Grande'; font-size:12px; line-height:16px; color:#224; }
+p { font-family:'Lucida Sans Unicode', 'Lucida Grande'; font-size:12px; color:#224; }
+
+a { color:#224; text-decoration:underline; }
+a:visited { color:#224; }
+a:hover { color:#224;  }
+
+h1 { font-size: 22px; font-weight:normal; line-height:22px; }
+h2 { font-size: 20px; font-weight:normal; line-height:20px;}
+h3 { font-size: 16px; font-weight:normal; }
+hr { border:1px #aaa solid; height:1; }
+
+/* main page elements */
+
+.main_title { margin-left:auto; margin-right:auto; width:240; font-size:70px; text-decoration:none; color:#224; line-height:80px; }
+.main_title:visited { color:#224; }
+.main_title:hover { color:#224; }
+
+.flash { background-color:#FFFF66; }
+.flash_container { margin-left:auto; margin-right:auto; width:550; text-align:right; }
+.error { color: #FF0000; }
+.valid { color: #00AA00; }
+.formError { color:#FF0000; display:inline; }
+
+.page_content_holder { margin-left:auto; margin-right:auto; width:550;text-align:justify; }
+
+hr { border-bottom:1px #224 solid; }
+LI.posts { list-style:none; margin:0 0 0 -40px; } 
+
+/* forms */
+
+.text_field {font-family:'Lucida Sans Unicode', 'Lucida Grande';  margin:3 0 0 0;  border:1px solid #224; padding:2px 2px 2px 3px; font-size:12px; display:inline; }
+.submit_button { border:1px solid #224; margin:3 0 0 0; font-size:12px;font-family:'Lucida Sans Unicode', 'Lucida Grande'; background:#FFF; color:#224; cursor:pointer; padding:1px 2px 0px 2px; display:inline; }
+textarea { border: 1px solid #224; font-size: 12px; font-family:'Lucida Sans Unicode', 'Lucida Grande'; margin:4 0 0 0; padding:2; }
+
+.field_title { float:left; display:inline; vertical-align:bottom; margin:5 0 0 -110px; text-align:right; width:100;}
+.field { display:inline;  }
+.fieldWithErrors { display:inline; }
+
+.text_field_message { display:inline; }
+.text_area_message { display:inline; vertical-align:top; }
+
+/* discussions */
+
+.user_name { float:left; display:inline; vertical-align:bottom; margin:0 0 0 -110px; text-align:right; width:100; }
+.post_body { display:inline;  }
+
+.invite_talk { color:white; background-color: #557; padding:10px; font-size:12px; }

@@ -1,0 +1,14 @@
+<%= hidden_field :discussion, :id %>
+
+<div class="field_title">Your full name</div>
+<div class="field">
+	<%= text_field :user, :name, :size => 30, :class => 'text_field' %>
+	<div id="user_name_error" class="text_field_message error"></div>
+</div>
+<br/><br/>
+
+<div class="field_title">Comment</div>
+<div class="field">
+	<%= text_area :post, :body, :cols => 50, :rows => 10 %>
+	<div id="post_body_error" class="text_area_message error"></div>
+</div>

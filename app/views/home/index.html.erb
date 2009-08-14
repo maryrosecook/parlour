@@ -1,0 +1,11 @@
+<div class="page_content_holder">	
+	<h1>Private discussions with people you invite</h1><br/>
+
+	<br/>
+	<h3>Start a new discussion</h3><br/>
+	
+	<% form_tag "/discussion/new" do -%>
+		<%= render(:partial => 'discussion/discussion_form') %><br/><br/>
+		<%= submit_tag "Start", :class => 'submit_button' %>
+	<% end-%>
+</div>

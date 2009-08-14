@@ -1,0 +1,14 @@
+<div class="main_title"><a href='/' class="main_title">Parlour</a></div>
+
+<div class="top_nav"></div>
+
+<!-- flash -->
+<div class="flash_container">
+	<% if flash[:notice] %>
+		<span class="flash">
+			<%= flash[:notice] %>
+		</span>
+	<% else %>
+		<br/>
+	<% end-%>
+</div>

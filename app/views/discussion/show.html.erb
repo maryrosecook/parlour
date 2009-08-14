@@ -1,0 +1,39 @@
+<div class="page_content_holder">
+	<% if @discussion %>
+		<h1><%= @discussion.title %></h1>
+		
+		<!-- posts -->
+		<ul id="posts" class="posts">
+			<% if @discussion.posts.length > 0 %>
+				<% for existing_post in @discussion.posts %>
+					<%= render :partial => 'post/show', :locals => { :post => existing_post } %>
+				<% end-%>
+			<% else %>
+				<li class="posts" id="nothing_said">Nothing said, yet.<br/></li>
+			<% end-%>
+		</ul>
+
+		<hr>
+		
+		<!-- invitation -->
+		<% if @discussion_created_by_current_user %>
+			<div class="invite_talk">
+				Invite others by sending them the address of this page.
+			</div>
+		<% end-%>
+		
+
+		
+		<!-- comment form -->
+		<br/>
+		<h3>Say something</h3><br/>
+		<% form_remote_tag(:url => { :controller => 'post', :action => 'add' } ) do %> 
+			<%= render(:partial => 'post/post_form') %><br/><br/>
+			<%= submit_tag "Speak", :class => 'submit_button' %>
+		<% end-%>
+		
+	<% else %> <!-- no discussion -->
+		<h1>No discussion here</h1><br/>
+		<p>You could <%= link_to "create one", :controller => "discussion", :action => "new" %>.</p>
+	<% end-%>
+</div>
