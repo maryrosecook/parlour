@@ -12,10 +12,10 @@ class DiscussionController < ApplicationController
     end
     
     if params[:identifier]
-      discussion_id = params[:identifier]
+      discussion_identifier = params[:identifier]
       @post = Post.new
-      @discussion = Discussion.find_by_identifier discussion_id
-      @discussion_created_by_current_user = session[:created_discussions] && session[:created_discussions].include?(@discussion.id)
+      @discussion = Discussion.find_by_identifier discussion_identifier
+      #@discussion_created_by_current_user = @discussion && session[:created_discussions] && session[:created_discussions].include?(@discussion.id)
     end
   end
   

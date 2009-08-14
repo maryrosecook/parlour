@@ -1,17 +1,17 @@
 <li class="posts" id="post<%=post.id%>">
-	<p class="user_name">
+	<p class="user_name"><strong>
 		<% if post.user %>
 			<%= post.user.name %>
 		<% else %>
 			Anon
 		<% end-%>
-	</p>
+	</strong></p>
 	<p class="post_body">
 		<% if Util.ne post.body %>
 			<%= post.body %>
 		<% else %>
 			No comment.
 		<% end-%>
-		<br/><br/>
 	</p>
+	<br/>
 </li>

@@ -11,12 +11,9 @@
 			<% else %>
 				<li class="posts" id="nothing_said">Nothing said, yet.<br/></li>
 			<% end-%>
-		</ul>
-
-		<!-- invitation -->
-		<div class="invite_talk">
-			<strong>Invite others by sending them the address of this page.</strong>
-		</div>
+		</ul><br/>
+		
+		<div class="divider"></div>
 		
 		<!-- comment form -->
 		<br/>
@@ -24,7 +21,12 @@
 		<% form_remote_tag(:url => { :controller => 'post', :action => 'add' } ) do %> 
 			<%= render(:partial => 'post/post_form') %><br/><br/>
 			<%= submit_tag "Speak", :class => 'submit_button' %>
-		<% end-%>
+		<% end-%><br/><br/>
+		
+		<!-- invitation -->
+		<div class="invite_talk">
+			<strong>Invite others by sending them the address of this page.</strong>
+		</div>
 		
 	<% else %> <!-- no discussion -->
 		<h1>No discussion here</h1><br/>
