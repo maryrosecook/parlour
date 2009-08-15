@@ -1,6 +1,6 @@
 <div class="page_content_holder">
 	<% if @discussion %>
-		<h1><%= @discussion.title %></h1>
+		<h1><%= @discussion.title %></h1><br/>
 		
 		<!-- posts -->
 		<ul id="posts" class="posts">
@@ -17,9 +17,9 @@
 		
 		<!-- comment form -->
 		<br/>
-		<h3>Say something</h3><br/>
+		<!-- <h3>Say something</h3><br/> -->
 		<% form_remote_tag(:url => { :controller => 'post', :action => 'add' } ) do %> 
-			<%= render(:partial => 'post/post_form') %><br/><br/>
+			<%= render(:partial => 'post/post_form') %><br/>
 			<%= submit_tag "Speak", :class => 'submit_button' %>
 		<% end-%><br/><br/>
 		
