@@ -1,5 +1,6 @@
 <div class="page_content_holder">
 	<h1>Start a new discussion</h1><br/>
+	<% @header_title = "Start a new discussion" %>
 	
 	<% form_tag "/discussion/new" do -%>
 		<%= render(:partial => 'discussion_form') %><br/><br/>

@@ -2,9 +2,9 @@ module Linking
   
   def self.site_url
     if production?
-      return "http://parlour.com"
+      return Siting.live_url
     else
-      return "http://localhost:3000"
+      return Siting.dev_url
     end
   end
   

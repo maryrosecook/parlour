@@ -1,6 +1,7 @@
 <div class="page_content_holder">
 	<% if @discussion %>
 		<h1><%= @discussion.title %></h1><br/>
+		<% @header_title = @discussion.title %>
 		
 		<!-- posts -->
 		<ul id="posts" class="posts">

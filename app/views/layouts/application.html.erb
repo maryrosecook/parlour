@@ -1,8 +1,8 @@
 <html> 
 	<head>
 		<!-- title -->
-		<% @title = "private discussion" if !Util.ne(@title) %>
-		<title>Parlour - <%= @title %></title>
+		<% @header_title = Siting.tagline if !Util.ne(@header_title) %>
+		<title>Parlour - <%= @header_title %></title>
 		
 		<%= javascript_include_tag 'application', 'prototype', 'effects', 'controls' %>
 		<%= stylesheet_link_tag "main", :media => "all" %>
