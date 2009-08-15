@@ -1,0 +1,5 @@
+<% if Linking.at_url?(link_url, request.request_uri) %>
+	<%= link_text %>
+<% else %>
+	<a href='<%=link_url%>'><%=link_text%></a>
+<% end-%>

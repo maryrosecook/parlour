@@ -5,12 +5,12 @@ input,form,h2 { display:inline; }
 body { font-family:'Lucida Sans Unicode', 'Lucida Grande'; font-size:12px; line-height:16px; color:#224; }
 p { font-family:'Lucida Sans Unicode', 'Lucida Grande'; font-size:12px; color:#224; }
 
-a { color:#224; text-decoration:underline; }
-a:visited { color:#224; }
+a { color:#422; text-decoration:none; }
+a:visited { color:#a00; }
 a:hover { color:#224;  }
 
 h1 { font-size: 22px; font-weight:normal; line-height:22px; }
-h2 { font-size: 20px; font-weight:normal; line-height:20px;}
+h2 { font-size: 20px; font-weight:normal; line-height:20px; }
 h3 { font-size: 16px; font-weight:normal; }
 hr { border:1px #aaa solid; height:1; }
 
@@ -27,6 +27,7 @@ hr { border:1px #aaa solid; height:1; }
 .formError { color:#FF0000; display:inline; }
 
 .page_content_holder { margin-left:auto; margin-right:auto; width:550;text-align:justify; }
+.top_nav { margin-left:auto; margin-right:auto; width:550; margin-top:0; border-top:1px #224 solid; padding:2 0 2 0; }
 
 hr { border-bottom:1px #224 solid; }
 LI.posts { list-style:none; margin:0 0 0 -40px; } 

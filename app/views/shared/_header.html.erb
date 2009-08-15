@@ -1,6 +1,8 @@
 <div class="main_title"><a href='/' class="main_title">Parlour</a></div>
 
-<div class="top_nav"></div>
+<div class="top_nav">
+	<%= render(:partial => 'shared/nav_link', :locals => { :link_url => "/", :link_text => "home" } ) %>
+</div>
 
 <!-- flash -->
 <div class="flash_container">
@@ -9,6 +11,5 @@
 			<%= flash[:notice] %>
 		</span>
 	<% else %>
-		<br/>
 	<% end-%>
 </div>

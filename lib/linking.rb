@@ -19,4 +19,8 @@ module Linking
   def self.production?
     ENV["RAILS_ENV"] == "production"
   end
+  
+  def self.at_url?(test_url, url)
+    test_url == url
+  end
 end
